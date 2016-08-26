@@ -8,7 +8,7 @@ use PlatziPHP\Http\Requests;
 
 use PlatziPHP\Post;
 
-class HomeController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,13 +16,8 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {               
-        $posts = Post::all();
-        //$posts = Post::with('author')->get();
-        
-        //dd($posts);
-                       
-        return view('home',['posts'=>$posts]);        
+    {
+        //
     }
 
     /**
@@ -54,7 +49,10 @@ class HomeController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = \PlatziPHP\Post::findOrFail($id);
+        //$posts = Post::all();
+        
+        return view('post', ['post'=>$post]);
     }
 
     /**

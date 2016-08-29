@@ -155,7 +155,7 @@ return [
         PlatziPHP\Providers\AuthServiceProvider::class,
         PlatziPHP\Providers\EventServiceProvider::class,
         PlatziPHP\Providers\RouteServiceProvider::class,
-
+        PlatziPHP\Providers\ViewComposerServiceProvider::class,
     ],
 
     /*

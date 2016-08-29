@@ -3,13 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/database/seeds/UsersTableSeeder.php</file>
             <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/app/User.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/gulpfile.js</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/app/Http/routes.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/app/Http/Controllers/PostController.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/resources/views/post.blade.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/package.json</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/resources/views/home.blade.php</file>
             <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/database/factories/ModelFactory.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/resources/views/layouts/default.blade.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/resources/assets/sass/app.scss</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/bootstrap/autoload.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/app/Http/Controllers/HomeController.php</file>
             <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/app/Post.php</file>
-            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/database/seeds/DatabaseSeeder.php</file>
             <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/database/migrations/2016_08_11_023641_create_posts_table.php</file>
-            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/.env</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/resources/views/welcome.blade.php</file>
+            <file>file:/C:/xampp/htdocs/platzilaravel/php/platzilaravel/bootstrap/app.php</file>
         </group>
     </open-files>
 </project-private>

@@ -1,15 +1,11 @@
 <?php
 
 namespace PlatziPHP\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 use PlatziPHP\Http\Requests;
-
-use PlatziPHP\Post;
 use Illuminate\Support\Facades\Auth;
 
-class HomeController extends Controller
+class AuthController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,14 +13,8 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {               
-        //dd(Auth::user()->name);
-        $posts = Post::all();
-        //$posts = Post::with('author')->get();
-        
-        //dd($posts);
-                       
-        return view('home',['posts'=>$posts]);        
+    {
+        return view('auth');
     }
 
     /**
@@ -45,7 +35,16 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+           'email'=>'required|email',
+            'password'=>'required',
+        ]);
+        
+        if(!Auth()->attempt($request->only(['email', 'password']))){
+            return redirect()->route('auth_show_path')->withErrors("No encontramos al usuario");          
+        }
+
+        return "listo";
     }
 
     /**
@@ -88,8 +87,9 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy()
     {
-        //
+        auth()->logout();
+        return redirect()->route('auth_show_path');
     }
 }
